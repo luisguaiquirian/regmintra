@@ -1,0 +1,108 @@
+1.- Definir Nombre
+git config --global user.name "Luis R. Guaiquiri�n"
+
+2.- Visualizar Nombre
+git config --global user.name
+
+3.- Configurar e-mail
+git config --global user.email "luisguaiquirian@gmail.com"
+
+4.- Activar los colores
+git config --global color.ui true
+
+4.1- Seleccionar el editor de codigo
+git config --global core.editor "code --wait"
+
+4.2- Configurar los saltos de linea
+
+	para windows
+git config --global core.autocrlf true
+
+	para Linux / Mac
+git config --global core.autocrlf input
+
+5.- Visualizar las Configuraciones
+git config --global --list
+
+6.- eliminar alguna configuracion
+git config --global --unset-all uner.name
+
+7.- Marcar el inicio del proyecto
+git init
+
+8.- Ver el estado del Proyecto
+git status
+
+9.- Agregar los archivos que estan listos
+git add index.php etc....
+
+10 .- Agregar Todos los archivos
+git add -A
+
+11.- Guardar los cambios
+git commit -m "Comentario espec�fico"
+
+12.- Listar todos los commits
+git log
+
+13.- Viajar en el tiempo
+git checkout codigo sha
+
+14.- volver al ultimo commit
+git checkout master
+
+15.- Generar un txt con los commits
+git log commits.txt
+
+16.- Eliminar commits sin tocar el c�digo
+git reset --soft c�digo sha
+
+17.- Eliminar commits con todo y c�digo
+git reset --hard c�digo sha
+
+18.- Ver la ayuda de git
+git hel
+
+19.- Ver las ramas del proyecto
+git branch
+
+20.- Crear una rama en el proyecto
+git branch nombre de la nueva rama
+
+21.- Movernos entre ramas
+git checkout nombre de la rama
+
+22.- Fusionar Ramas
+	22.1- Nos movemos a la rama que va a obsorver
+	git checkout nombre de la rama
+	22.2- fusionamos las ramas
+	git merge nombre de la rama obsorvida
+
+23.- Eliminar una rama
+git branch -D nombre de la rama a eliminar
+
+24.- Crear una rama y movernos de una vez a ella
+git checkout -b nombre de la nueva rama
+
+25.- Conectar el repositorio local con el Repositorio Remoto
+git remote add origin (link del proyecto.git)
+
+26.- Comprobar la conexi�n de los Repositorios
+git remote -v
+
+27.- Eliminar la conexi�n de los Repositorios
+git remote remove origin
+
+28.- Subir los archivos al repositorio Remoto master
+git push origin master
+
+29.- Subir una nueva rama
+git push origin nombre de la rama
+
+30.- Cambiar la descripci�n del �ltimo commit
+git commit --amend -m "CAMBIO"
+
+31.- Actualizar forzando los cambios de descripci�n del commit
+git push origin master -f
+
+32.-
